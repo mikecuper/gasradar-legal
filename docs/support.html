@@ -1,132 +1,139 @@
 <!DOCTYPE html>
-<html lang="es-MX">
+<html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Soporte — GasRadar</title>
+<title>Ayuda y Soporte — GasRadar</title>
 <style>
-  :root {
-    --bg: #1C2B3A;
-    --card: #2A3D52;
-    --border: #344E65;
-    --neon: #00E676;
-    --text: #FFFFFF;
-    --text-sec: #A9BBCC;
-  }
-  * { box-sizing: border-box; }
+  * { margin:0; padding:0; box-sizing:border-box; }
   body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--text);
-    font-family: -apple-system, 'Segoe UI', Roboto, sans-serif;
-    line-height: 1.6;
+    background: #0D1620;
+    color: #E8F0F8;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif;
+    line-height: 1.7;
   }
-  .wrap {
+  .header {
+    background: #1C2B3A;
+    border-bottom: 1px solid #253848;
+    padding: 24px 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .logo {
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: -0.5px;
+  }
+  .logo span { color: #00E676; }
+  .container {
     max-width: 640px;
     margin: 0 auto;
-    padding: 40px 24px 64px;
+    padding: 32px 20px 80px;
   }
   h1 {
-    font-size: 26px;
+    font-size: 22px;
+    font-weight: 800;
     margin-bottom: 4px;
+    letter-spacing: -0.3px;
   }
-  .subtitle {
-    color: var(--text-sec);
+  p.meta {
+    font-size: 12px;
+    color: #8AA0B8;
+    margin-bottom: 24px;
+  }
+  h3 {
     font-size: 15px;
-    margin-bottom: 32px;
+    font-weight: 700;
+    color: #00E676;
+    margin-top: 28px;
+    margin-bottom: 8px;
+    letter-spacing: 0.2px;
   }
-  .faq-item {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 14px;
-    padding: 18px 20px;
-    margin-bottom: 14px;
-  }
-  .faq-item h3 {
-    margin: 0 0 8px;
-    font-size: 16px;
-    color: var(--neon);
-  }
-  .faq-item p {
-    margin: 0;
+  p {
     font-size: 14px;
-    color: var(--text-sec);
+    color: #B8C8D8;
+    margin-bottom: 10px;
   }
   .contact-box {
-    margin-top: 40px;
+    margin-top: 36px;
+    background: #1C2B3A;
+    border: 1px solid #253848;
+    border-radius: 14px;
+    padding: 22px 20px;
     text-align: center;
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 16px;
-    padding: 28px 20px;
   }
   .contact-box p {
-    margin: 0 0 12px;
-    color: var(--text-sec);
-    font-size: 15px;
+    color: #8AA0B8;
+    margin-bottom: 14px;
   }
-  .contact-box a.email-btn {
+  a.mail-btn {
     display: inline-block;
-    background: var(--neon);
+    background: #00E676;
     color: #06281a;
     font-weight: 700;
     text-decoration: none;
-    padding: 12px 28px;
+    padding: 12px 26px;
     border-radius: 999px;
-    font-size: 15px;
+    font-size: 14px;
   }
-  footer {
+  .back {
+    display: inline-block;
+    margin-top: 32px;
+    padding: 10px 18px;
+    background: #1C2B3A;
+    border: 1px solid #253848;
+    border-radius: 10px;
+    color: #8AA0B8;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .footer {
     text-align: center;
-    color: var(--text-sec);
-    font-size: 12px;
-    margin-top: 48px;
+    padding: 24px;
+    font-size: 11px;
+    color: #4A6B8A;
+    border-top: 1px solid #1C2B3A;
+    margin-top: 40px;
   }
-  a { color: var(--neon); }
 </style>
 </head>
 <body>
-  <div class="wrap">
-    <h1>Soporte de GasRadar</h1>
-    <p class="subtitle">Preguntas frecuentes y cómo contactarnos</p>
+  <div class="header">
+    <div class="logo">Gas<span>Radar</span></div>
+  </div>
+  <div class="container">
+    <h1>Ayuda y Soporte</h1>
+    <p class="meta">Preguntas frecuentes y cómo contactarnos</p>
 
-    <div class="faq-item">
-      <h3>¿Por qué GasRadar necesita mi ubicación?</h3>
-      <p>La usamos únicamente para mostrarte las gasolineras y electrolineras más cercanas a ti. Si no otorgas el permiso, la app sigue funcionando normal usando la Ciudad de México como referencia.</p>
-    </div>
+    <h3>¿Por qué GasRadar necesita mi ubicación?</h3>
+    <p>La usamos únicamente para mostrarte las gasolineras y electrolineras más cercanas a ti. Si no otorgas el permiso, la app sigue funcionando normal usando la Ciudad de México como referencia, en modo de consulta.</p>
 
-    <div class="faq-item">
-      <h3>¿De dónde vienen los precios?</h3>
-      <p>Los precios de combustible provienen de datos públicos oficiales de la CRE (Comisión Reguladora de Energía). Las ubicaciones de electrolineras provienen de datos públicos de CFE.</p>
-    </div>
+    <h3>¿De dónde vienen los precios?</h3>
+    <p>Los precios de combustible provienen de datos públicos oficiales de la CRE (Comisión Reguladora de Energía). Las ubicaciones de electrolineras provienen de datos públicos de la CFE.</p>
 
-    <div class="faq-item">
-      <h3>¿Necesito crear una cuenta para usar la app?</h3>
-      <p>No. GasRadar funciona por completo sin registro, sin inicio de sesión y sin necesidad de compartir datos personales.</p>
-    </div>
+    <h3>¿Necesito crear una cuenta para usar la app?</h3>
+    <p>No. GasRadar funciona por completo sin registro, sin inicio de sesión y sin necesidad de compartir datos personales.</p>
 
-    <div class="faq-item">
-      <h3>¿Qué incluye "Quitar anuncios"?</h3>
-      <p>Es una compra única de $40 MXN que elimina todos los anuncios de forma permanente, quita el límite de gasolineras favoritas, y desbloquea herramientas de análisis, estadísticas y tendencias de precio.</p>
-    </div>
+    <h3>¿Qué incluye "Quitar anuncios"?</h3>
+    <p>Es una compra única de $40 MXN que elimina todos los anuncios de forma permanente, quita el límite de gasolineras favoritas, y desbloquea herramientas de análisis, estadísticas y tendencias de precio.</p>
 
-    <div class="faq-item">
-      <h3>Los precios no coinciden con lo que vi en la gasolinera</h3>
-      <p>Los precios se actualizan periódicamente a partir de la fuente oficial. Puede haber una pequeña diferencia si la estación actualizó su precio muy recientemente. Si notas un error persistente, contáctanos abajo.</p>
-    </div>
+    <h3>Los precios no coinciden con lo que vi en la gasolinera</h3>
+    <p>Los precios se actualizan periódicamente a partir de la fuente oficial. Puede haber una pequeña diferencia si la estación actualizó su precio muy recientemente. Si notas un error persistente, contáctanos abajo.</p>
 
-    <div class="faq-item">
-      <h3>La app no encuentra gasolineras cerca de mí</h3>
-      <p>Intenta aumentar el radio de búsqueda (5/10/20 km) desde la pantalla principal, o verifica que tengas conexión a internet activa.</p>
-    </div>
+    <h3>La app no encuentra gasolineras cerca de mí</h3>
+    <p>Intenta aumentar el radio de búsqueda (5/10/20 km) desde la pantalla principal, o verifica que tengas conexión a internet activa.</p>
 
     <div class="contact-box">
       <p>¿Tu pregunta no está aquí? Escríbenos y te respondemos lo antes posible.</p>
-      <a class="email-btn" href="mailto:neorislabs@gmail.com?subject=Soporte%20GasRadar">Escribir a soporte</a>
+      <a class="mail-btn" href="mailto:neorislabs@gmail.com?subject=Soporte%20GasRadar">Escribir a soporte</a>
     </div>
 
-    <footer>
-      Neoris Labs · GasRadar © 2026
-    </footer>
+    <a href="index.html" class="back">← Volver</a>
+  </div>
+  <div class="footer">
+    Neoris Labs · Monterrey, Nuevo León, México · neorislabs@gmail.com
   </div>
 </body>
 </html>
